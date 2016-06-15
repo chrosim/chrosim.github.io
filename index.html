@@ -1,13 +1,28 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Just Playing around</title>
-    </head>
-    <body>
-        Playground
-        test
-        <script src="main.js"></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <title>Just Playing around</title>
+</head>
+
+<body>
+    Playground test
+    <script src="main.js"></script>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAtH1z6_QtG4TsFHW2e8AhPupPVKgqq7R4"
+        , authDomain: "tests-6cf22.firebaseapp.com"
+        , databaseURL: "https://tests-6cf22.firebaseio.com"
+        , storageBucket: "tests-6cf22.appspot.com"
+    , };
+    firebase.initializeApp(config);
+</script>
+
 </html>
