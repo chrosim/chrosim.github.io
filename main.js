@@ -8,7 +8,7 @@
                 userVisibleOnly: true
             }).then(
                 function (pushSubscription) {
-                    fetch('http://localhost:8080/subscribe', {
+                    fetch('https://localhost:8080/subscribe', {
                         method: 'post'
                         , body: JSON.stringify(pushSubscription)
                     });
