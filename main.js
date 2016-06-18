@@ -11,7 +11,9 @@
                     fetch('https://localhost:8080/subscribe', {
                         method: 'post'
                         , mode: 'no-cors'
-                        , body: JSON.stringify(pushSubscription)
+                        , body: {
+                            data: JSON.stringify(pushSubscription)
+                        }
                     });
                     console.log(JSON.stringify(pushSubscription));
                 }
