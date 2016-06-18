@@ -10,6 +10,7 @@
                 function (pushSubscription) {
                     fetch('https://localhost:8080/subscribe', {
                         method: 'post'
+                        , mode: 'no-cors'
                         , body: JSON.stringify(pushSubscription)
                     });
                     console.log(JSON.stringify(pushSubscription));
