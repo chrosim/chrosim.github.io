@@ -8,11 +8,11 @@
                 userVisibleOnly: true
             }).then(
                 function (pushSubscription) {
-                    fetch('https://192.168.0.106:8080/subscribe', {
+                    fetch('https://192.168.0.107:8080/subscribe', {
                         method: 'post'
                         , mode: 'no-cors'
-                        , body:  JSON.stringify(pushSubscription)
-                        
+                        , body: JSON.stringify(pushSubscription)
+
                     });
                     console.log(JSON.stringify(pushSubscription));
                 }

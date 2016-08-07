@@ -13,7 +13,7 @@ self.addEventListener('push', function (event, data) {
 
     event.waitUntil(
         self.registration.showNotification('Push Notification recieved', {
-            body: 'This is the Message Body and it should be data but i do not recieve anything in push'
+            body: 'This is the Message Body and it should be data but i do not recieve anything in push ' + even.data
             , icon: 'images/icon.png'
             , tag: 'my-tag'
         }));
